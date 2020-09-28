@@ -21,6 +21,11 @@ html, body{
     padding: 0;
     margin: 0;
     margin-bottom: 100px;
+    background-color: var(--mainColor);
+}
+
+body *{
+    transition: ease-in-out 0.7s;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -192,7 +197,7 @@ ul {
     background-color: green;
 }
 #dark-mode{
-    background-color: black;
+    background-color: #0c1933;;
 }
 
 #settings-note{
@@ -317,6 +322,8 @@ ul {
 .post{
     border: 1px solid var(--borderColor);
 }
+
+
 
 #contact-form{
     display: block;

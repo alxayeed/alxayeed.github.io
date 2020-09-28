@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="default.css">
+    <link rel="stylesheet" type="text/css" href="light.css">
+    <link id="theme-style" rel="stylesheet" type="text/css" href="">
 
     <link href="https://fonts.googleapis.com/css2?family=Delius+Unicase:wght@700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
@@ -16,8 +17,8 @@
     <section class="s1">
         <div class="main-container">
             <div class="greeting-wrapper">
-                <h1>Hi from Al!</h1>
-                <h5>Welcome to my portfolio<h5></h5>
+                <h1 style="text-align: center;">Hi from Al!</h1>
+                <h3>Welcome to my portfolio</h3>
             </div>
 
             <div class="display-wrapper">
@@ -35,15 +36,15 @@
 
                 <div class="left-column">
                     <img id="profile_pic" src="img/Al.jpg" alt="">
-                    <h5 style="text-align: center;line-height: 0;">Personalaize Look</h5>
+                    <h5 style="text-align: center;line-height: 0;">Change Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
                         <!-- <div id="blue-mode" class="theme-dot"></div>
                         <div id="green-mode" class="theme-dot"></div> -->
-                        <div id="dark-mode" class="theme-dot"></div>
+                        <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
                     </div>
-                    <p id="settings-note">Changes will saved for the next visit</p>
+                    <!-- <p id="settings-note">Changes will saved for the next visit</p> -->
                 </div>
                 <div class="right-column">
                     <div id="preview-shadow">
@@ -103,7 +104,8 @@
                     <img id="social_img" src="img/ld.png" alt="">
                     <h3>Connect Me</h3>
                     <div id="links">
-                        <p><a href="#">Github</a></p>
+                        <p><a target="_blank" href="https://github.com/alxayeed/">Github</a></p>
+                        <p><a target="_blank" href="https://www.linkedin.com/in/alxayeed/">LinkedIn</a></p>
                         <p><a href="#">Twitter</a></p>
                     </div>
 
@@ -174,7 +176,9 @@
         </div>
     </section>
 
+    <script src="script.js">
 
+    </script>
 </body>
 
 </html>
