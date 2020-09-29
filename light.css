@@ -52,7 +52,9 @@ a{
 
 ul {
     list-style: none;
+    padding: 0px;
 }
+
 
 .s1{
     background-color: var(--mainColor);
@@ -161,6 +163,10 @@ ul {
     border: 2px solid car(--borderColor);
 }
 
+#profile_pic:hover{
+    transform: rotateY(360deg);
+}
+
 #theme-options-wrapper{
     display: flex;
     justify-content: center;
@@ -263,11 +269,31 @@ ul {
     gap: 100px;
 }
 
+.flex{
+    display:flex;
+    justify-content: space-between;
+    padding-left:10px;
+    padding-right:10px;
+    color:var(--mainText);
+}
+
+.skills{
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.py {width: 90%; background-color: #25d4a9;}
+.java {width: 60%; background-color: #d64b6d;}
+.django {width: 85%; background-color: #e2c20a;}
+.react {width: 70%; background-color:#08bff7;}
+.js {width: 60%; background-color: #eb4747;}
+
 #skills{
     display: flex;
     justify-content: space-evenly;
     background-color: var(--previewShadow);
-    margin-top: 150px;
+    margin-top: 50px;
 }
 
 .social_links{
