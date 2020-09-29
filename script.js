@@ -24,3 +24,5 @@ function changeTheme(mode) {
 
     localStorage.setItem('theme', mode)
 }
+
+console.log(document)
