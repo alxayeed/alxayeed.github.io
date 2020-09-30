@@ -195,9 +195,9 @@ ul {
     border: 2px solid car(--borderColor);
 }
 
-#profile_pic:hover{
+/* #profile_pic:hover{
     transform: rotateY(360deg);
-}
+} */
 
 #theme-options-wrapper{
     display: flex;
