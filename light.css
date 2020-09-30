@@ -461,6 +461,8 @@ ul {
     }
 
     .right-column{
+        max-width: inherit;
+        margin: 0px;
         justify-content: center;
     }
 }
