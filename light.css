@@ -104,15 +104,17 @@ ul {
 .bottom-bar{
     grid-area: topbar;
     border-bottom: 1px solid var(--borderColor );
-    display: flex;
+    display: grid;
     justify-content: space-between;
-    align-items: center;
+    align-content: space-evenly;
+    grid-template-columns: 200px 0px 200px;
     background-color: var(--mainText);
     border-radius: 0px 0px 14px 14px;
 }
 
 .dots-wrapper{
     display: flex;
+    justify-content: space-between;
     padding: 10px;
 }
 
@@ -136,20 +138,14 @@ ul {
     width: 20px;
 }
 
-/* #dot-2{
-    background-color:rgb(252, 186, 7);
-} */
+
 
 #menu-dots{
-    display: flex;
-    align-content: space-between;
     background-color: var(--mainColor);
     width: 100px;
     height: 20px;
     border-radius: 10px ;
     color: var(--mainText);
-    text-align: right;
-    margin-left: 60px;
 }
 
 #hp-dot{
@@ -159,9 +155,10 @@ ul {
     width: 30px;
     border-radius: 50%;
     text-align: center;
-    padding: 5px;
+    padding: 0px;
     font-size: 20px;
     font-style: italic;
+    margin-top: 10px;
 }
 
 .control-dot{
@@ -342,6 +339,27 @@ ul {
     background-color: var(--previewShadow);
     padding-bottom: 50px;
     margin-top: 35px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    justify-content: space-between;
+}
+
+#links a:link{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--mainText);
+    color: var(--mainColor);
+    border-radius: 10px;
+}
+
+#links a:hover{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 15px;
+    background-color: var(--mainText);
+    color: var(--mainColor);
+    border-radius: 10px;
 }
 
 #social_img{
@@ -437,9 +455,9 @@ ul {
     .display-wrapper{
         grid-template-columns: 1fr;
         grid-template-areas:
-         'topbar' 
          'left-column'
-         'right-column';
+         'right-column'
+         'topbar' ;
     }
 
     .right-column{
